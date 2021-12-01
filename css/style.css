@@ -180,7 +180,8 @@ figcaption{
 .content-text a{
     color: #faf9f1;     
     letter-spacing: 2px; 
-    font-weight: 500; 
+    font-weight: 400;
+    font-size: 16px;  
 }
 .content-text button:hover{
     background-color: #335f6c;
@@ -439,7 +440,7 @@ copyright li{
             display: none
         }
     }
-@media only screen and (max-width: 1088px){
+@media only screen and (max-width: 1024px){
     #f1-updates a, #championship a {
         display: none; 
     }
