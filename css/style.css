@@ -8,7 +8,7 @@
 }
 body{
     display: grid; 
-    background-color: #faf9f1;
+    background-color: #faf9f6;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; 
     grid-template-rows:auto ;
     grid-template-areas: 
@@ -139,6 +139,8 @@ figcaption{
 }
 .content-pic{
     grid-area: pic;
+    margin-top: auto; 
+    margin-bottom: auto; 
 }
 .image {
     width: 100%; 
@@ -204,7 +206,6 @@ figcaption{
     margin-top: auto; 
     margin-bottom: auto; 
     text-align: right;
-    margin-left: 1.7vw; 
     grid-area: text;
     line-height: 25px;   
 }
@@ -394,7 +395,9 @@ copyright li{
             align-items: flex-start;
         }
         #site-info{
-            font-size: 16px; 
+            font-size: 16px;
+            font-weight: 300; 
+            text-align: center; 
         }
         .navbar-links li a{
             color: #faf9f1; 
@@ -440,7 +443,7 @@ copyright li{
             display: none
         }
     }
-@media only screen and (max-width: 1024px){
+@media only screen and (max-width: 960px){
     #f1-updates a, #championship a {
         display: none; 
     }
@@ -453,6 +456,9 @@ copyright li{
 }
     #explanation{
         font-weight: 150; 
+    }
+    #news #explanation, h1{
+        padding-left: 0; 
     }
     .content-text, #news>.content-text{
         text-align: center; 
