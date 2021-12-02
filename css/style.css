@@ -455,7 +455,8 @@ copyright li{
         "text";
 }
     #explanation{
-        font-weight: 150; 
+        font-weight: 150;
+        font-size: 16px 
     }
     #news #explanation, h1{
         padding-left: 0; 
