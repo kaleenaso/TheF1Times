@@ -186,8 +186,8 @@ figcaption{
     font-size: 16px;  
 }
 .content-text button:hover{
-    background-color: #335f6c;
-    border-color: #335f6c; 
+    background-color: #C6AD8F;
+    border-color: #C6AD8F; 
 }
 .content-pic .image:hover{
     box-shadow: 0px 0px 20px #737373;
@@ -305,7 +305,7 @@ footer a{
     margin-left: 2vw; 
 }
 footer a:hover{
-    color: #889CB8; 
+    color: #C6AD8F; 
 }
 #logo img{
     width: 6.5vh;

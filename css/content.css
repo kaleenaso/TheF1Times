@@ -45,7 +45,7 @@ nav{
     position: sticky; 
     display: flex;
     top:0; 
-    background-color: #335f6c;
+    background-color: #425664;
     grid-area: nav;
     align-items:center; 
     justify-content: center; 
@@ -63,7 +63,7 @@ nav a{
 }
 #page {
     background-color: rgba(136, 156, 184, .3);
-    box-shadow: inset 0 -3px 0 #c5ddff;
+    box-shadow: inset 0 -3px 0 #faf9f1;
 }
 nav li:hover{
     background-color: rgba(136, 156, 184, .3);
