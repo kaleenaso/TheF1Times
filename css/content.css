@@ -45,7 +45,7 @@ nav{
     position: sticky; 
     display: flex;
     top:0; 
-    background-color: #425664;
+    background-color: rgb(61,94,106);;
     grid-area: nav;
     align-items:center; 
     justify-content: center; 
