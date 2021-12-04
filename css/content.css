@@ -45,7 +45,7 @@ nav{
     position: sticky; 
     display: flex;
     top:0; 
-    background-color: #3D5E6A;
+    background-color: rgb(34,40,45);
     grid-area: nav;
     align-items:center; 
     justify-content: center; 
@@ -54,7 +54,7 @@ nav{
 nav li, nav a{
     display: inline-block; 
     font-size: 15px; 
-    color: #faf9f1; 
+    color: rgb(104, 104, 104); 
 }
 nav a{
     padding: 0.6vw; 
@@ -62,12 +62,16 @@ nav a{
     margin-left: 2vw; 
 }
 #page {
-    background-color: rgba(136, 156, 184, .3);
-    box-shadow: inset 0 -3px 0 #faf9f1;
+    box-shadow: inset 0 -3px 0 rgb(153, 188, 201);
+}
+#page a{
+    color:rgb(153, 188, 201); 
 }
 nav li:hover{
-    background-color: rgba(136, 156, 184, .3);
-    box-shadow: inset 0 -3px 0 #faf9f1;
+    box-shadow: inset 0 -3px 0 rgb(153, 188, 201);
+}
+nav li:hover a{
+    color: rgb(153, 188, 201); 
 }
 main {
     grid-area: main;
@@ -111,7 +115,7 @@ footer a{
     margin-left: 2vw; 
 }
 footer a:hover{
-    color: #C6AD8F; 
+    color: rgb(153, 188, 201); 
 }
 #logo img{
     width: 5vh;
@@ -181,11 +185,11 @@ copyright li{
             background-color: rgba(136, 156, 184, .3);
             box-shadow: none; 
         }
+        nav ul li:hover a{
+            color: #faf9f1;
+        }
         #page{
             box-shadow: none; 
-        }
-        nav ul li a:hover{
-            color: #b2edf1;
         }
         .toggle-button{
             display: flex;
@@ -204,7 +208,7 @@ copyright li{
             align-items: flex-start;
         }
         .navbar-links li a{
-            color: #faf9f1; 
+            color: rgb(86, 104, 116);
             font-weight: 500; 
             letter-spacing: 1.5px; 
             padding: 1.0vw; 
