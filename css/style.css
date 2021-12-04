@@ -78,6 +78,9 @@ nav li, nav a{
     color: rgb(104, 104, 104); 
 }
 nav a{
+    color: rgb(197, 195, 195);
+}
+nav a{
     padding: 0.6vw; 
     margin-right: 2vw; 
     margin-left: 2vw; 
