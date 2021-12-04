@@ -62,16 +62,16 @@ nav a{
     margin-left: 2vw; 
 }
 #page {
-    box-shadow: inset 0 -3px 0 rgb(153, 188, 201);
+    box-shadow: inset 0 -3px 0 #faf9f1;
 }
 #page a{
-    color:rgb(153, 188, 201); 
+    color:#faf9f1; 
 }
 nav li:hover{
-    box-shadow: inset 0 -3px 0 rgb(153, 188, 201);
+    box-shadow: inset 0 -3px 0 #faf9f1;
 }
 nav li:hover a{
-    color: rgb(153, 188, 201); 
+    color: #faf9f1; 
 }
 main {
     grid-area: main;
