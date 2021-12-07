@@ -9,18 +9,18 @@
 body{
     display: grid; 
     background-color: #faf9f1;
-    grid-template-columns: 1fr 1fr; 
+    grid-template-columns: auto; 
     grid-template-rows:auto ;
     grid-template-areas: 
-    "site site"
-    "nav nav"
-    "main main" 
-    "one one"
-    "two two"
-    "three three"
-    "four four"
-    "foot foot"
-    "cp cp"
+    "site site site site site site"
+    "nav nav nav nav nav nav" 
+    "main main main main main main" 
+    "one one one one one one"
+    "two two two two two two"
+    "three three three three three three"
+    "four four four four four four " 
+    "foot foot foot foot foot socials"
+    "cp cp cp cp cp cp"
     ;
 }
 
@@ -88,7 +88,7 @@ main {
 #section-four{
     grid-area: four; 
 }
-footer{
+footer {
     display: flex; 
     position: relative; 
     bottom: 0; 
@@ -103,14 +103,14 @@ footer a, footer li{
     color: #faf9f1; 
     font-size: 15px ; 
 }
-footer ul {
+#copyright {
     position: relative; 
-    left: 0; 
+    left: 10; 
     padding: 10px; 
-    margin-top: auto;
-    margin-bottom: auto; 
+    margin: auto 0; 
+
 }
-footer a{
+footer li{
     margin-right: 2vw; 
     margin-left: 2vw; 
 }
@@ -118,22 +118,39 @@ footer a:hover{
     color: rgb(153, 188, 201); 
 }
 #logo img{
-    width: 5vh;
+    width: 6.5vh;
     height : auto; 
     margin-top: auto; 
     margin-bottom: auto;
 }
-copyright {
+#home {
     background-color: #06203b;
     grid-area: cp;
 }
-copyright li{
-    font-size: 12px; 
+#home a {
+    text-align: center; 
+    margin: 10px auto;
+    letter-spacing: 5px; 
+}
+footer li{
+    font-size: 11.7px; 
     color: #faf9f1;
-    list-style: none;
-    position: relative;
-    left: 0;
-    display: flex;
+    margin-top: auto;
+    margin-bottom: auto;  
+}
+#socials{
+    grid-area: socials;
+    display: flex; 
+    justify-content: space-between;
+}
+#socials a {
+    color: #faf9f1; 
+    opacity: 70%;
+    font-size: 25px ;
+    margin: auto 10px; 
+}
+#socials a:hover {
+    color: rgb(153, 188, 201); 
 }
 .toggle-button{
     position: absolute; 
@@ -215,5 +232,11 @@ copyright li{
         }
         .navbar-links.active {
             display: flex;
+        }
+        #socials {
+            justify-content: center; 
+        }
+        #home {
+            display: none; 
         }
     }
