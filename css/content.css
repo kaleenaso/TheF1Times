@@ -9,7 +9,7 @@
 body{
     display: grid; 
     background-color: #faf9f1;
-    grid-template-columns: auto; 
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; 
     grid-template-rows:auto ;
     grid-template-areas: 
     "site site site site site site"
@@ -19,8 +19,7 @@ body{
     "two two two two two two"
     "three three three three three three"
     "four four four four four four " 
-    "foot foot foot foot foot socials"
-    "cp cp cp cp cp cp"
+    "foot foot foot foot foot social"
     ;
 }
 
@@ -88,14 +87,13 @@ main {
 #section-four{
     grid-area: four; 
 }
-footer {
+footer{
     display: flex; 
     position: relative; 
     bottom: 0; 
     justify-content: space-between;
     width: 100%;
     background-color: #12142D;
-    grid-area: foot; 
 }
 footer a, footer li{
     font-weight: 500; 
@@ -108,13 +106,14 @@ footer a, footer li{
     left: 10; 
     padding: 10px; 
     margin: auto 0; 
-
+    grid-area: foot; 
 }
+
 footer li{
     margin-right: 2vw; 
     margin-left: 2vw; 
 }
-footer a:hover{
+footer a:hover, #home a:hover{
     color: rgb(153, 188, 201); 
 }
 #logo img{
@@ -123,33 +122,35 @@ footer a:hover{
     margin-top: auto; 
     margin-bottom: auto;
 }
-#home {
-    background-color: #06203b;
-    grid-area: cp;
+#home{
+    justify-content: center;
+    display: flex; 
+    background-color: rgb(34,40,45);
+    width: 15%; 
 }
 #home a {
     text-align: center; 
     margin: 10px auto;
     letter-spacing: 5px; 
 }
-footer li{
-    font-size: 11.7px; 
+#copyright li{
+    font-size: 12px; 
     color: #faf9f1;
     margin-top: auto;
     margin-bottom: auto;  
 }
-#socials{
-    grid-area: socials;
+#social{
+    grid-area: social;
     display: flex; 
     justify-content: space-between;
 }
-#socials a {
+#social a, #home a{
     color: #faf9f1; 
     opacity: 70%;
-    font-size: 25px ;
+    font-size: 23px ;
     margin: auto 10px; 
 }
-#socials a:hover {
+#social a:hover {
     color: rgb(153, 188, 201); 
 }
 .toggle-button{
@@ -190,7 +191,8 @@ footer li{
         "three"
         "four"
         "foot"
-        "cp";}
+        "social";
+    }
         header {
             display: none;
         }
@@ -233,10 +235,7 @@ footer li{
         .navbar-links.active {
             display: flex;
         }
-        #socials {
-            justify-content: center; 
-        }
-        #home {
-            display: none; 
+        #copyright li {
+            margin: auto 0; 
         }
     }
