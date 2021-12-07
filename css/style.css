@@ -300,7 +300,7 @@ footer a, footer li{
     color: #faf9f1; 
     font-size: 15px ; 
 }
-#copyright {
+footer#copyright {
     position: relative; 
     left: 10; 
     padding: 10px; 
@@ -314,6 +314,9 @@ footer li{
 }
 footer a:hover, #home a:hover{
     color: rgb(153, 188, 201); 
+}
+#logo, #copyright > li{
+    display: flex; 
 }
 #logo img{
     width: 6.5vh;
@@ -472,6 +475,9 @@ footer a:hover, #home a:hover{
         }
         #cover-image{
             display: none
+        }
+        #copyright li{
+            color: #12142d; 
         }
     }
 @media only screen and (max-width: 1000px ){
