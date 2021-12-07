@@ -1,0 +1,191 @@
+main{
+margin: 2vw; 
+}
+#header{
+    font-size: 14px; 
+    font-weight: 200; 
+    letter-spacing: 2px; 
+}
+h1 {
+    grid-area: head;
+    font-size: 25px; 
+    margin-bottom: 0.9vw; 
+    letter-spacing: 2px; 
+    font-weight: 500; 
+}
+.section-one .content-text p{
+    text-align: left;
+    font-size: 16px; 
+    color: #12142D;
+    margin-bottom: 1vw; 
+    margin-right: 2vw; 
+    font-weight: 200;  
+    line-height: 25px; 
+}
+.content-pic {
+    grid-area: pic;  
+    border-radius: 2px; 
+}
+.content-text p , .text-free-practice p{
+    text-align: left;
+    font-size: 16px; 
+    color: #12142D;
+    margin: 1vw 0;
+    font-weight: 200;  
+    line-height: 25px; 
+}
+.content-text{
+    grid-area: text;
+}
+#image{
+    width: 100% ; 
+    height: auto;
+    transition: 0.2s; 
+}
+.content-pic #image:hover, #qualifying #image:hover, #race-day #image:hover, #free-practice #image:hover{
+    box-shadow: 0px 0px 10px #737373;
+}
+figcaption{
+    text-align: center; 
+    font-style: italic;
+    font-size: 12px; 
+    margin-bottom: 2vw; 
+}
+figure{
+    margin: auto 0; 
+}
+.section-one {
+    display: grid; 
+    margin:1vw 2vw; 
+    border-bottom: solid 1px #12142D;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "head pic"
+    "text pic" ;
+}
+.section-two {
+    display: grid; 
+    margin: 1vw 2vw; 
+    border-bottom: solid 1px #12142D;
+    grid-template-columns: 1fr 1.4fr; 
+    grid-template-rows: auto; 
+    grid-template-areas: 
+    "pic head"
+    "pic text";
+}
+.section-two h1, .section-two p {
+    text-align: right; 
+}
+.section-two #image {
+    width: 100%; 
+    height: 23vw; 
+}
+.section-two p {
+    text-align: right;
+    font-size: 16px; 
+    color: #12142D;
+    margin-bottom: 1vw; 
+    margin-left: 2vw; 
+    font-weight: 200;  
+    line-height: 25px; 
+}
+h2{
+    font-size: 20px; 
+    letter-spacing: 2px; 
+    font-weight: 500; 
+    color: #737373;
+}
+.section-three {
+    display: grid;
+    margin: 2vw; 
+    margin-top: 0; 
+    grid-template-columns: 1fr 1fr;  
+    grid-template-rows: auto; 
+    grid-template-areas: 
+    "head head"
+    "text text"
+    "text-fp fp"
+    "quali text-quali"
+    "text-race race"
+}
+.section-three .content-text p{
+    text-align: justify;
+}
+.text-free-pratice, .text-free-practice p{
+    grid-area: text-fp; 
+    text-align: left;
+    font-size: 16px; 
+    color: #12142D;
+    margin: 1vw 0;
+    margin-right: 0.7vw; 
+    font-weight: 200;  
+    line-height: 25px; 
+}
+.text-qualifying , .text-qualifying p{
+    text-align: left;
+    font-size: 16px; 
+    color: #12142D;
+    margin: 1vw 0;
+    margin-left: 0.7vw; 
+    font-weight: 200;  
+    line-height: 25px; 
+}
+.text-race-day, .text-race-day p {
+    text-align: left;
+    font-size: 16px; 
+    color: #12142D;
+    margin: 1vw 0;
+    margin-right: 0.7vw ; 
+    font-weight: 200;  
+    line-height: 25px; 
+}
+#free-practice{
+    grid-area: fp; 
+}
+#qualifying 
+{
+    grid-area: quali
+}
+#race-day{
+    grid-area: race; 
+}
+
+@media only screen and (max-width: 760px){
+    .section-one , .section-two{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "head"
+        "pic"
+        "text"    }
+    .section-three{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "head"
+        "text"
+        "fp"
+        "text-fp"
+        "quali"
+        "text-quali"
+        "race"
+        "text-race"
+        ;
+    }
+    .text-qualifying p, .text-qualifying , .section-two p{
+        margin: 0; 
+        margin-bottom: 10px; 
+    }
+    .content-text p, .text-race-day p, .text-qualifying p{
+        text-align: left; 
+    }
+    .section-two #image{
+        height: auto; 
+    }
+    #pic-two{
+        display: none; 
+    }
+}

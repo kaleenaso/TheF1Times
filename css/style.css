@@ -42,13 +42,13 @@ header a{
 }
 #f1-updates {
     grid-area:latest;
-    font-size: 12px; 
+    font-size: 15px; 
     text-align: left; 
     display: flex; 
 }
 #championship{
     grid-area:point; 
-    font-size: 12px;
+    font-size: 15px;
     text-align: right; 
     display: flex;
 }
