@@ -10,7 +10,7 @@ h1 {
     grid-area: head;
     font-size: 25px; 
     margin-bottom: 0.9vw; 
-    letter-spacing: 2px; 
+    letter-spacing: 1px; 
     font-weight: 500; 
 }
 .section-one .content-text p{
@@ -21,6 +21,10 @@ h1 {
     margin-right: 2vw; 
     font-weight: 200;  
     line-height: 25px; 
+}
+.content-text {
+    margin-top: auto; 
+    margin-bottom: auto; 
 }
 .content-pic {
     grid-area: pic;  
@@ -43,7 +47,7 @@ h1 {
     transition: 0.2s; 
 }
 .content-pic #image:hover, #qualifying #image:hover, #race-day #image:hover, #free-practice #image:hover{
-    box-shadow: 0px 0px 10px #737373;
+    box-shadow: 0px 0px 12px #737373;
 }
 figcaption{
     text-align: center; 
@@ -61,7 +65,6 @@ figure{
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
     grid-template-areas:
-    "head pic"
     "text pic" ;
 }
 .section-two {
@@ -71,7 +74,6 @@ figure{
     grid-template-columns: 1fr 1.4fr; 
     grid-template-rows: auto; 
     grid-template-areas: 
-    "pic head"
     "pic text";
 }
 .section-two h1, .section-two p {
@@ -174,6 +176,11 @@ h2{
         "race"
         "text-race"
         ;
+    }
+    h1{
+        font-size: 20px; 
+        text-align: left; 
+        letter-spacing: 1px; 
     }
     .text-qualifying p, .text-qualifying , .section-two p{
         margin: 0; 
