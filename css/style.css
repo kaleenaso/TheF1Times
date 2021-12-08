@@ -175,23 +175,26 @@ figcaption{
     font-size: 15px; 
     font-weight: 250; 
 }
-.content-text button {
+.content-text a {
     border-radius: 4px; 
     background-color: #12142D;
-    margin: 1.7vw; 
+    margin: 2vw 1.7vw ; 
     padding: 0.4vw 0.9vw; 
     border: 2px solid #12142D; 
-    transition: 0.3s;
 }
-.content-text a{
-    color: #faf9f1;     
+.content-text button{
+    color: #faf9f1; 
+    background-color: transparent;
+    border: transparent; 
     letter-spacing: 2px; 
     font-weight: 400;
     font-size: 16px;  
+    margin-top: 2vw; 
+    transition: 0.3s;
 }
-.content-text button:hover{
-    background-color: rgb(153, 188, 201); 
-    border-color: rgb(153, 188, 201); 
+.content-text a:hover{
+    background-color: rgb(138, 165, 175);
+    border-color: rgb(138, 165, 175);
 }
 .content-pic .image:hover{
     box-shadow: 0px 0px 20px #737373;
