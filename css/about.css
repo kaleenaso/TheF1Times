@@ -46,9 +46,6 @@ h1 {
     height: auto;
     transition: 0.2s; 
 }
-.content-pic #image:hover, #qualifying #image:hover, #race-day #image:hover, #free-practice #image:hover{
-    box-shadow: 0px 0px 12px #737373;
-}
 figcaption{
     text-align: center; 
     font-style: italic;
