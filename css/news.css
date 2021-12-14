@@ -1,0 +1,39 @@
+figcaption{
+    text-align: center; 
+    font-style: italic;
+    font-size: 12px; 
+    margin-bottom: 2vw; 
+}
+img{
+    width: 100%; 
+    height: auto; 
+}
+#cover {
+    margin: 2vw; 
+}
+.news-links {
+    justify-content: center;
+    display: flex; 
+}
+.news-links li {
+    display: inline; 
+    margin: 0 2vw; 
+    color: rgb(104, 104, 104);
+    font-size: 35px; 
+    font-weight: 300; 
+    letter-spacing: 2px; 
+}
+.news-links a , .news-links li{
+    font-size: 35px; 
+    font-weight: 300; 
+    letter-spacing: 2px; 
+}
+.news-links a{
+    color: rgba(104, 104, 104, .7);
+}
+#line {
+    color: rgba(104, 104, 104,.7);
+}
+.news-links a:hover {
+    color: rgb(54, 119, 116); 
+}
