@@ -15,12 +15,20 @@ body{
     "site site site site site site"
     "nav nav nav nav nav nav" 
     "main main main main main main" 
-    "one one one one one one"
-    "two two two two two two"
-    "three three three three three three"
-    "four four four four four four " 
     "foot foot foot foot foot social"
     ;
+}
+main {
+    display: grid; 
+    background-color: #faf9f1;
+    grid-template-columns: 1fr ; 
+    grid-template-rows:auto ;
+    grid-template-areas: 
+    "cover"
+    "one"
+    "two"
+    "three"
+    "four"
 }
 
 #site-title, #site-title a{
@@ -74,6 +82,9 @@ nav li:hover a{
 }
 main {
     grid-area: main;
+}
+#cover {
+    grid-area: cover; 
 }
 .section-one{
     grid-area: one;
@@ -181,10 +192,6 @@ footer a:hover, #home a:hover{
         grid-template-areas: 
         "nav"
         "main"
-        "one"
-        "two"
-        "three"
-        "four"
         "foot"
         "social";
     }

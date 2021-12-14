@@ -1,5 +1,5 @@
-main{
-margin: 2vw; 
+#cover{
+    margin: 2vw; 
 }
 #header{
     font-size: 14px; 
@@ -76,7 +76,7 @@ figure{
     grid-template-areas: 
     "pic text";
 }
-.section-two h1, .section-two p {
+.section-two h1{
     text-align: right; 
 }
 .section-two #image {
@@ -152,7 +152,20 @@ h2{
 #race-day{
     grid-area: race; 
 }
-
+.section-four{
+    margin: 2vw 2vw; 
+}
+.section-four a, .section-four p {
+    font-size: 14px; 
+    color: #12142D; 
+    margin-bottom: 3px; 
+} 
+.section-four a:hover{
+    text-decoration: underline;
+}
+.section-four h1{
+    font-size: 18px; 
+}
 @media only screen and (max-width: 760px){
     .section-one , .section-two{
         display: grid;
@@ -177,17 +190,16 @@ h2{
         "text-race"
         ;
     }
-    h1{
+    h1, .section-two h1{
         font-size: 20px; 
         text-align: left; 
         letter-spacing: 1px; 
     }
-    .text-qualifying p, .text-qualifying , .section-two p{
+    .content-text > p, .section-one .content-text p, .section-three  p {
         margin: 0; 
-        margin-bottom: 10px; 
-    }
-    .content-text p, .text-race-day p, .text-qualifying p{
-        text-align: left; 
+        text-align: justify; 
+        margin-top: 5px; 
+        margin-bottom: 5px;
     }
     .section-two #image{
         height: auto; 

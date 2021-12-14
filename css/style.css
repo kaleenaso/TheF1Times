@@ -6,8 +6,8 @@
         font-family: 'DM sans', sans-serif; 
         text-decoration: none; 
 }
-body{
-    display: grid; 
+body {
+    display:grid; 
     background-color: #faf9f1;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; 
     grid-template-rows:auto ;
@@ -15,11 +15,19 @@ body{
     "latest site site site site point"
     "nav nav nav nav nav nav"
     "main main main main main main"
-    "about about about about about about"
-    "news news news news news news"
-    "his his his his his his"
     "vid vid vid vid vid vid"
     "foot foot foot foot social social"
+}
+main{
+    display: grid; 
+    background-color: #faf9f1;
+    grid-template-columns: 1fr ; 
+    grid-template-rows:auto ;
+    grid-template-areas: 
+    "cover"
+    "about"
+    "news"
+    "his"
 }
 header{
     background-color: #12142D;
@@ -96,6 +104,9 @@ nav li:hover a{
 main {
     grid-area: main; 
     overflow-x: hidden;
+}
+#cover {
+    grid-area: cover; 
 }
 #cover-image{
     width: 100%; 
