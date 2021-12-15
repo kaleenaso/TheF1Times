@@ -194,7 +194,7 @@ h2{
     }
     .content-text > p, .section-one .content-text p, .section-three  p {
         margin: 0; 
-        text-align: justify; 
+        text-align: left; 
         margin-top: 5px; 
         margin-bottom: 5px;
     }
