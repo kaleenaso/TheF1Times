@@ -7,6 +7,7 @@ figcaption{
 img{
     width: 100%; 
     height: auto; 
+    transition: 0.3s; 
 }
 #cover {
     margin: 2vw; 
@@ -59,10 +60,14 @@ h2 {
 }
 p{
     text-align: center; 
+    color: #12142D; 
     font-size: 12px; 
     letter-spacing: 2px; 
     font-weight: 150; 
 
+}
+.section-one img:hover {
+    box-shadow: 0px 0px 20px #737373;
 }
 
 @media only screen and (max-width: 760px){
