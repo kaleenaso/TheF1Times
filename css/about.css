@@ -108,9 +108,7 @@ h2{
     "quali text-quali"
     "text-race race"
 }
-.section-three .content-text p{
-    text-align: justify;
-}
+
 .text-free-pratice, .text-free-practice p{
     grid-area: text-fp; 
     text-align: left;
@@ -203,5 +201,8 @@ h2{
     }
     #pic-two{
         display: none; 
+    }
+    main{
+        margin: 1.7vw; 
     }
 }

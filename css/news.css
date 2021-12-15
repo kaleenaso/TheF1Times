@@ -73,6 +73,7 @@ h2:hover{
 }
 .section-one img:hover {
     box-shadow: 0px 0px 20px #737373;
+    border-radius: 10px;
 }
 
 @media only screen and (max-width: 760px){
