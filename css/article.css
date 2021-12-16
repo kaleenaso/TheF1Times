@@ -276,6 +276,9 @@ h6, h6 a{
     color: #12142D; 
     font-size: 11px; 
 }
+h6, b {
+    margin-bottom: 0.3vw;
+}
 h6 a:hover {
     text-decoration: underline; 
 }
