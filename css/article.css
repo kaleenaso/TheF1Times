@@ -156,24 +156,29 @@ aside > a > img{
     margin: auto 0 ; 
     transition: 0.3s; 
 }
-aside > a > p{
+#explanation, #longer-explanation{
     grid-area: p; 
     color: #12142D;
-    margin: 2vh 0 auto 2vh; 
-    font-size: 2.29vh; 
+    margin: auto 2vh; 
+    margin-right: 0; 
+    font-size: 1.12vw; 
 }
 #longer-explanation{
     display:none; 
 }
 .article {
     grid-area: words;
-    margin: 1vw 10vw 2vw 10vw; 
+    margin: 1vw 5vw 2vw 10vw; 
     font-size: 16px;
 }
 .article p {
     margin: 2vw 0; 
     line-height: 25px; 
     font-weight: 300; 
+}
+iframe{
+    width: 100%; 
+    height: 52vh; 
 }
 footer{
     display: flex; 
@@ -266,6 +271,14 @@ footer a:hover, #home a:hover{
     font-style: italic; 
     padding-left: 1rem; 
 }
+h6, h6 a{
+    font-weight: 300; 
+    color: #12142D; 
+    font-size: 11px; 
+}
+h6 a:hover {
+    text-decoration: underline; 
+}
 @media only screen and (max-width:1024px){
     body{
         grid-template-columns: 1fr; 
@@ -290,8 +303,12 @@ footer a:hover, #home a:hover{
     aside{
         margin-left: 2vw; 
     }
-    aside a > h5 {
+    aside > a > h5 {
         font-size: 18px; 
+        margin:  2vw; 
+    }
+    #longer-explanation{
+        font-size: 16px; 
     }
     .article{
         margin: 3vw; 
@@ -306,6 +323,7 @@ footer a:hover, #home a:hover{
     }
     #longer-explanation{
         display: flex; 
+        margin: 2vw; 
     }
     #explanation {
         display: none; 
@@ -313,8 +331,12 @@ footer a:hover, #home a:hover{
     aside a:hover {
         border: none; 
     }
+    aside > header {
+        margin: 0 2vw; 
+    }
     aside a{
         border: none; 
+        padding: 2vw; 
     }
 }
 @media only screen and (max-width: 800px){
@@ -389,7 +411,9 @@ footer a:hover, #home a:hover{
     aside a:hover {
         border: none; 
     }
-    aside p {
+    aside #longer-explanation {
         text-align: center; 
+        margin: 1vw auto;
+        font-size: 12px; 
     }
 }
