@@ -52,8 +52,9 @@ img{
 }
 h2 {
     text-align: center; 
+    font-family: 'DM Serif display', serif; 
     font-size: 23px;
-    font-weight: 350;  
+    font-weight: 500;  
     color:rgb(104, 104, 104); 
     padding: 1vw; 
     letter-spacing: 2px;
