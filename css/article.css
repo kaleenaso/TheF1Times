@@ -20,6 +20,7 @@ body{
 }
 main {
     display: grid; 
+    grid-area: main; 
     background-color: #faf9f1;
     grid-template-columns: 1fr 1fr 1fr ; 
     grid-template-rows:auto ;
@@ -27,7 +28,7 @@ main {
     grid-template-areas: 
     "head head head"
     "one one links"
-    "words words ."
+    "words words .";
 }
 
 #site-title, #site-title a{
@@ -109,8 +110,7 @@ img {
     height: auto; 
 }
 .section-one img {
-    border-radius: 0 20px 20px 0px;
-    border-bottom: 10px solid rgb(54, 119, 116);
+    border-radius: 0 20px 0px 0px;
     border-top: 10px solid rgb(54, 119, 116);
     border-right: 10px solid rgb(54, 119, 116);
 }
@@ -128,7 +128,7 @@ aside header{
     padding-bottom: 0.7vw; 
 }
 aside a {
-    padding: 2vw 2vw 2vw 0; 
+    padding: 4.1vh 4.1vh 4.1vh 0; 
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-areas: 
@@ -159,8 +159,11 @@ aside > a > img{
 aside > a > p{
     grid-area: p; 
     color: #12142D;
-    margin: 1vw 0 auto 1vw; 
-    font-size: 1em; 
+    margin: 2vh 0 auto 2vh; 
+    font-size: 2.29vh; 
+}
+#longer-explanation{
+    display:none; 
 }
 .article {
     grid-area: words;
@@ -263,12 +266,12 @@ footer a:hover, #home a:hover{
     font-style: italic; 
     padding-left: 1rem; 
 }
-
-@media only screen and (max-width: 800px){
+@media only screen and (max-width:1024px){
     body{
         grid-template-columns: 1fr; 
         grid-template-rows: auto; 
         grid-template-areas: 
+        "site"
         "nav"
         "main"
         "foot"
@@ -276,6 +279,7 @@ footer a:hover, #home a:hover{
     }
     main {
         grid-template-columns: 1fr;
+        grid-template-rows: auto;
         grid-template-areas:
         "head"
         "one"
@@ -286,27 +290,44 @@ footer a:hover, #home a:hover{
     aside{
         margin-left: 2vw; 
     }
-    aside a{
-        grid-template-columns: 1fr;
-        grid-template-areas: 
-        "h5"
-        "img"
-        "p";
-        padding: 2vw; 
-        border: none; 
+    aside a > h5 {
+        font-size: 18px; 
     }
     .article{
-        margin: 2vw; 
+        margin: 3vw; 
     }
-    a > h5 {
-        text-align: center; 
-        margin: 1vw 0; 
-        font-size: 16px; 
+    h1{
+        margin: 2vw; 
+        text-align: center;
+        font-size: 1.5em; 
+    }
+    .section-one{
+        margin-right: 2vw; 
+    }
+    #longer-explanation{
+        display: flex; 
+    }
+    #explanation {
+        display: none; 
     }
     aside a:hover {
         border: none; 
     }
-    header {
+    aside a{
+        border: none; 
+    }
+}
+@media only screen and (max-width: 800px){
+    body{
+        grid-template-columns: 1fr; 
+        grid-template-rows: auto; 
+        grid-template-areas: 
+        "nav"
+        "main"
+        "foot"
+        "social";
+    }
+    body > header {
         display: none;
     }
     nav {
@@ -351,4 +372,24 @@ footer a:hover, #home a:hover{
      #copyright li {
          margin: auto 0; 
      }
+    aside a{
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "h5"
+        "img"
+        "p";
+        padding: 2vw; 
+        border: none; 
+    }
+    a > h5 {
+        text-align: center; 
+        margin: 1vw 0; 
+        font-size: 16px; 
+    }
+    aside a:hover {
+        border: none; 
+    }
+    aside p {
+        text-align: center; 
+    }
 }

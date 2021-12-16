@@ -20,6 +20,7 @@ body{
 }
 main {
     display: grid; 
+    grid-area: main; 
     background-color: #faf9f1;
     grid-template-columns: 1fr ; 
     grid-template-rows:auto ;
@@ -192,7 +193,6 @@ footer a:hover, #home a:hover{
         grid-template-areas: 
         "nav"
         "main"
-
         "foot"
         "social";
     }
