@@ -282,10 +282,12 @@ h6, b {
 h6 a:hover {
     text-decoration: underline; 
 }
+
 button{
     padding: 0.5vw; 
     font-size: 14px; 
     float: right;
+    margin: 10px; 
     color:rgb(54, 119, 116);
     border:1px solid rgb(54, 119, 116);
     background-color: inherit;
@@ -294,7 +296,7 @@ button{
 }
 button:hover{
     border-width: 3px; 
-    margin: -2px; 
+    margin: 8px; 
 }
 @media only screen and (max-width:1024px){
     body{
