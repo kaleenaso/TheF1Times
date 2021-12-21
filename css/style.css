@@ -253,7 +253,8 @@ aside {
     "head head head"
     "gp1 gp2 gp3"
     "head1 head1 head1"
-    "vid1 vid2 vid3";
+    "vid1 vid2 vid3"
+    "ref ref ref";
 }
 iframe{
     width: 100%; 
@@ -299,6 +300,9 @@ aside p {
     grid-area: vid2;}
 #vid3{
     grid-area: vid3;}
+#references {
+    grid-area: ref
+}
 footer{
     display: flex; 
     position: relative; 
@@ -387,7 +391,17 @@ footer a:hover, #home a:hover{
     font-style: italic; 
     padding-left: 1rem; 
 }
-
+h6, h6 a{
+    font-weight: 300; 
+    color: #12142D; 
+    font-size: 11px; 
+}
+h6, b {
+    margin-bottom: 0.3vw;
+}
+h6 a:hover {
+    text-decoration: underline; 
+}
 @media only screen and (max-width: 700px){
     body{
         grid-template-columns: auto; 
@@ -461,7 +475,8 @@ footer a:hover, #home a:hover{
             "head1"
             "vid1"
             "vid2"
-            "vid3";
+            "vid3"
+            "ref";
         }
         #gp1, #gp2, #gp3, #vid1, #vid2, #vid3{
             margin: 1.7vw; 
