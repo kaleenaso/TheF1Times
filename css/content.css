@@ -186,7 +186,13 @@ footer a:hover, #home a:hover{
     font-style: italic; 
     padding-left: 1rem; 
 }
-
+figcaption{
+    text-align: center; 
+    font-style: italic;
+    font-size: 12px; 
+    margin-bottom: 1vw; 
+    color: #12142d; 
+}
 @media only screen and (max-width: 800px){
     body{
         grid-template-columns: 1fr; 
