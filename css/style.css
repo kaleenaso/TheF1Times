@@ -89,10 +89,9 @@ nav li, nav a{
 nav a{
     color: rgb(197, 195, 195);
 }
-nav a{
-    padding: 0.6vw; 
-    margin-right: 2vw; 
-    margin-left: 2vw; 
+nav li > a{
+    padding: 0.6vw 2.6vw; 
+    width: inherit; 
 }
 nav li:hover{
     box-shadow: inset 0 -3px 0 #faf9f1;
@@ -192,6 +191,7 @@ figcaption{
     margin: 2vw 1.7vw ; 
     padding: 0.4vw 0.9vw; 
     border: 2px solid #12142D; 
+    transition: 0.3s;
 }
 .content-text button{
     color: #faf9f1; 
@@ -201,7 +201,6 @@ figcaption{
     font-weight: 400;
     font-size: 16px;  
     margin-top: 2vw; 
-    transition: 0.3s;
 }
 .content-text a:hover{
     background-color: rgb(54, 119, 116);
@@ -455,7 +454,8 @@ h6 a:hover {
             color: rgb(86, 104, 116);
             font-weight: 500; 
             letter-spacing: 1.5px; 
-            padding: 1.4vw; 
+            padding: 1.4vw;
+            width: 100%;  
         }
         .navbar-links.active {
             display: flex;
