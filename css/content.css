@@ -21,6 +21,7 @@ body{
 main {
     display: grid; 
     grid-area: main; 
+    z-index: 0; 
     background-color: #faf9f1;
     grid-template-columns: 1fr ; 
     grid-template-rows:auto ;
@@ -49,6 +50,7 @@ main {
     display: none;
 }
 nav{
+    z-index: 1; 
     position: -webkit-sticky; 
     position: sticky; 
     display: flex;

@@ -110,12 +110,6 @@ main {
     width: 100%;
     height: 35vw; 
 }
-#cover-image-min{
-    width: 100%; 
-    height: 100vw; 
-    display:none; 
-
-}
 figcaption{
     font-style: italic; 
     font-weight: 300; 
@@ -490,12 +484,6 @@ h6 a:hover {
         }
         #vid3{
             margin-bottom: 5vh ;
-        }
-        #cover-image-min{
-            display: flex; 
-        }
-        #cover-image{
-            display: none
         }
         #copyright li{
             color: #12142d; 
