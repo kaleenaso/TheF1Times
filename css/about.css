@@ -49,7 +49,7 @@ h1 {
     font-family: 'DM Serif Display', serif;
     font-size: 7vw; 
     width: inherit; 
-    letter-spacing: 5px;
+    letter-spacing: 0.6vw;    
     text-shadow: #12142D .41vw .41vw 1px;
 }
 .content-pic {
