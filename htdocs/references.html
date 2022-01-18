@@ -11,6 +11,10 @@
     <style>
         .section-one {
             margin: 1vw 2vw; 
+            grid-area: one;
+        }
+        #cover{
+            grid-area: cover; 
         }
         figure img {
             height: auto; 
@@ -31,6 +35,15 @@
         h6 a:hover {
             text-decoration: underline; 
         }
+        @media only screen and (max-width: 800px){main{
+            display: grid; 
+            grid-template-columns: 1fr; 
+            grid-template-rows: auto; 
+            grid-template-areas: 
+            "cover"
+            "one"
+        }
+    }
     </style>
 </head>
 <body>
