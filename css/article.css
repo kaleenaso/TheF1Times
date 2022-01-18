@@ -292,14 +292,14 @@ button{
     float: right;
     margin: 10px; 
     color:rgb(54, 119, 116);
-    border:1px solid rgb(54, 119, 116);
+    border:2px solid rgb(54, 119, 116);
     background-color: inherit;
     border-radius: 5px; 
     transition: 0.1s; 
 }
 button:hover{
-    border-width: 3px; 
-    margin: 8px; 
+    color: #12142d;
+    border-color: #12142d;
 }
 @media only screen and (max-width:1024px){
     body{
