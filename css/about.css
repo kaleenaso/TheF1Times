@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
-#cover{
-    margin: 2vw; 
+#cover #header, #cover .content-text, #cover h1{
+    margin: 1vw 2vw; 
 }
 #header{
     font-size: 14px; 
@@ -32,7 +32,7 @@ h1 {
 }
 .container h4{
     position: absolute; 
-    top: 40%;
+    top: 55%;
     right: 5%;
     color: #faf9f1;
     font-family: 'Playfair Display', serif;
