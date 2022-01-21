@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
 #cover{
     margin: 2vw; 
 }
@@ -29,28 +30,17 @@ h1 {
 .container{
     position: relative; 
 }
-.centered {
-    position: absolute;
-    background:rgba(0,0,0,.3);
-    width: 100%;
-    height: 100%; 
-    text-align: center;
-    top: 49.6%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-.centered h4{
+.container h4{
     position: absolute; 
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-transform: uppercase;
+    top: 40%;
+    right: 5%;
     color: #faf9f1;
-    font-family: 'DM Serif Display', serif;
-    font-size: 7vw; 
-    width: inherit; 
-    letter-spacing: 0.6vw;    
-    text-shadow: #12142D .41vw .41vw 1px;
+    font-family: 'Playfair Display', serif;
+    font-size: 3vw; 
+    font-weight: 300; 
+    width: inherit;    
+    text-shadow: #0C0D1D 0px 0px 10px; 
+    display: flex; 
 }
 .content-pic {
     grid-area: pic;  
@@ -59,7 +49,7 @@ h1 {
 .content-text p , .text-free-practice p{
     text-align: left;
     font-size: 16px; 
-    color: #12142D;
+    color: #0C0D1D;
     margin: 1vw 0;
     font-weight: 200;  
     line-height: 25px; 
@@ -230,5 +220,8 @@ h2{
     }
     main{
         margin: 1.7vw; 
+    }
+    .container h4{
+        display: none; 
     }
 }

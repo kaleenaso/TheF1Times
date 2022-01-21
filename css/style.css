@@ -30,7 +30,7 @@ main{
     "his"
 }
 header{
-    background-color: #12142D;
+    background-color: #0C0D1D;
     position:relative; 
     z-index: 100; 
 }
@@ -301,7 +301,7 @@ footer{
     bottom: 0; 
     justify-content: space-between;
     width: 100%;
-    background-color: #12142D;
+    background-color: #0C0D1D;
 }
 footer#copyright {
     position: relative; 
@@ -385,7 +385,7 @@ footer a:hover, #home a:hover{
 }
 h6, h6 a{
     font-weight: 300; 
-    color: #12142D; 
+    color: #0C0D1D; 
     font-size: 11px; 
 }
 h6, b {
@@ -413,7 +413,7 @@ h6 a:hover {
         }
         nav {
             justify-content: space-between;
-            background-color: #12142d;
+            background-color: #0C0D1D;
         }
         nav ul  li:hover{
             background-color: rgba(136, 156, 184, .3);
@@ -486,7 +486,7 @@ h6 a:hover {
             margin-bottom: 5vh ;
         }
         #copyright li{
-            color: #12142d; 
+            color: #0C0D1D; 
         }
     }
 @media only screen and (max-width: 1000px ){
