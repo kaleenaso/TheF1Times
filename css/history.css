@@ -29,6 +29,15 @@
     column-gap: 1.4vw;
     row-gap: 1.4vw;
 }
+article img { 
+    transition: 0.3s;
+}
+article img:hover{
+    border-radius: 10px;
+    outline: 7px solid  rgb(54, 119, 116);
+    outline-offset: -7px;
+    box-shadow: rgba(104,104,104, 0.5) 0px 0px 15px; 
+}
 h2 {
     font-family: 'PLayfair Display', serif;
     font-size: 20px;
