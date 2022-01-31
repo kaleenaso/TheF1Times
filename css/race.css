@@ -78,7 +78,7 @@ h2 {
     display:grid;
     grid-template-columns: 1fr 1.2fr 1fr;
     grid-template-rows: auto;
-    column-gap: 1vw;
+    column-gap: 1.5vw;
     background-color: #0C0D1D;
     padding: 2vw 10vw;
     grid-template-areas: 
@@ -101,40 +101,153 @@ h2 {
 }
 #bottas-3{
     grid-area: third;
-    margin-top: 5.5vw;
+    margin-top: 6vw;
+    position: relative;
 }
 #verstappen-1{
     grid-area: first;
+    position: relative;
 }
 #hamilton-2{
     grid-area: second;
-    margin-top: 5.5vw;
+    margin-top: 5.6vw;
+    position: relative;
+}
+#verstappen-1:hover, #hamilton-2:hover, #bottas-3:hover{
+    background: #292929;
+}
+.driver-standings a:hover{
+    box-shadow: 0 0 30px rgba(104,104,104, 0.5);
+}
+#standing{
+    position: absolute; 
+    top: 5%; 
+    right: 5%; 
+    font-size: 60px; 
+    font-weight: 700;
+    text-shadow: 2px 2px 2px #38383f;
+    font-style: italic;
+    font-family: "DM Display", serif;
 }
 h3 img{
     float:right;
     margin-right: 20px;
-    width:2vw;
+    width:40px;
     height:auto;
 }
 #first-name{
-    margin: 0 0 0 2vw;
+    padding: 0 0 0 2vw;
     letter-spacing: 2px;
+    margin-top: 25px;
+    font-weight: 500;
 }
 #lastname {
     margin: 0 0 0 2vw; 
-    font-size: 30px;
+    font-size: 2.4vw;
+    margin-bottom: 25px;
+    letter-spacing: 1px; 
+    font-weight: bold;
 }
 #bottas-3, #verstappen-1, #hamilton-2{
-    background-color: #737373;
+    background-color: #38383f;
+    transition: .4s;
     border-radius: 20px;
+
 }
 #bottas-3>img, #verstappen-1>img, #hamilton-2>img{
-    background-color: #0C0D1D;
-}
+    background-color: #faf9f1 ;
+    border-radius: 20px 20px 0 0;
 
+}
+.grid-standings-2021{
+    margin: 1vw 10vw;
+    list-style: none;
+    align-items: center;
+}
+.grid-standings-2021 li{
+    border-radius: 5px;
+    transition: .4s;
+    display: flex; 
+    position: relative; 
+    width: 100%;
+    flex-wrap: wrap;
+    align-items: wrap;
+    justify-content: space-between;
+    background: #e6e5de;
+    padding:15px 10px 15px 20px;
+    margin: 5px 0;
+}
+.grid-standings-2021 li a{
+    width: 100%;
+    color: #0C0D1D;
+}
+.grid-standings-2021 li a i{
+    color: rgb(54, 119, 116);
+    margin-left: 10px;
+}
+.grid-standings-2021 li:hover{
+    background: #38383f;
+}
+.grid-standings-2021 li:hover a{
+    color: #faf9f1;
+}
+.grid-standings-2021 li:hover i{
+    color:#faf9f1;
+}
+#f1-standing{
+    font-size: 18px; 
+    font-weight:bold;
+    margin: 1vw;
+    padding-right: 1vw;
+    letter-spacing: 1px;
+    border-right: solid 5px #12142d;
+}
+#f1-lastname{
+    font-size: 18px; 
+    font-weight: 600;
+    text-transform: uppercase; 
+    margin: 0 1vw;
+    letter-spacing: 1px;
+}
+#f1-firstname {
+    font-size: 16px;
+    text-transform: capitalize;}
+#f1-team {
+    font-size: 14px; 
+    color: #737373; 
+}
+#f1-points-finish{
+    font-size: 15px;
+    font-weight: bold; 
+    text-align: right;
+    float: right;
+    letter-spacing: 1px;
+    padding: 0 25px 0 0 ;
+}
+#standing-button{
+    margin: auto;
+    display: flex;
+}
+button{
+    background: #0C0D1D;
+    border:2px solid #0C0D1D;
+    border-radius: 5px;
+    display: center;
+    margin: 1vw auto;
+    padding: 12px 20px 12px 15px;
+    font-weight: bold;
+    color: #faf9f1;
+    transition: .3s;
+}
+button:hover{
+    background: #faf9f1;
+    color:rgb(54, 119, 116);
+    border:2px solid rgb(54, 119, 116);
+}
 @media only screen and (max-width: 900px){
     .section-one{
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
+        margin: 2vw;
     }
 }
 
@@ -142,11 +255,23 @@ h3 img{
     .container h4{
         display: none;
     }
-    .section-one{
+    .driver-standings{
         grid-template-columns: 1fr;
-        margin: 2vw;
+        grid-template-areas:
+        "heading"
+        "first";
+        padding: 2vw;
+    }
+    .grid-standings-2021{
+        margin:1vw 2vw;}
+
+    #hamilton-2, #bottas-3{
+        display: none;
     }
     .rules-preview{
         column-gap: 1.4vw;
+    }
+    #f1-firstname, #f1-team {
+        display: none;
     }
 }
