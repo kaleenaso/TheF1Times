@@ -313,6 +313,7 @@ button:hover{
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows:auto;
     column-gap: 1.4vw;
+    row-gap: 1.4vw;
 }
 #f1-race-stats:hover {
     border-bottom:5px solid rgb(54, 119, 116);
@@ -325,12 +326,18 @@ button:hover{
         grid-template-columns: 1fr;
         margin: 2vw;
     }
+.race-stats-preview{
+    grid-template-columns: 1fr 1fr;
+    }   
 }
 
 @media only screen and (max-width: 760px){
     .container h4{
         display: none;
     }
+    .race-stats-preview{
+        grid-template-columns: 1fr;
+        }  
     .driver-standings, .team-standings{
         grid-template-columns: 1fr;
         grid-template-areas:
