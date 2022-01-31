@@ -74,6 +74,7 @@ h2 {
     color: #737373;
     letter-spacing: 1px;
 }
+/* section 3 */
 .driver-standings, .team-standings{
     display:grid;
     grid-template-columns: 1fr 1.2fr 1fr;
@@ -84,6 +85,9 @@ h2 {
     grid-template-areas: 
     "heading heading heading"
     "second first third";
+}
+.team-standings{
+    padding-bottom: 0;
 }
 .driver-standings>h1, .team-standings>h1{
     grid-area: heading; 
@@ -100,18 +104,28 @@ h2 {
     font-family: "DM Sans", sans-serif;
     text-align: left;
 }
-#bottas-3, #ferrari-standing{
+#bottas-3{
     grid-area: third;
     margin-top: 6vw;
+    position: relative;
+}
+ #ferrari-standing{
+    grid-area: third;
+    margin-top:3.3vw;
     position: relative;
 }
 #verstappen-1, #mercedes-standing{
     grid-area: first;
     position: relative;
 }
-#hamilton-2, #redbull-standing{
+#hamilton-2{
     grid-area: second;
     margin-top: 5.6vw;
+    position: relative;
+}
+#redbull-standing{
+    grid-area: second;
+    margin-top: 2.2vw;
     position: relative;
 }
 #verstappen-1:hover, #hamilton-2:hover, #bottas-3:hover{
@@ -203,23 +217,39 @@ h3 img{
     letter-spacing: 1px;
     border-right: solid 5px #12142d;
 }
-#f1-lastname{
+#f1-lastname, #f1-teamname{
     font-size: 18px; 
     font-weight: 600;
     text-transform: uppercase; 
     margin: 0 1vw;
     letter-spacing: 1px;
 }
+#f1-teamname{
+    text-transform: capitalize;
+    letter-spacing: 0.7px;
+}
 #f1-firstname {
     font-size: 16px;
     text-transform: capitalize;}
-#f1-team {
+#f1-team, #f1-drivers{
     font-size: 14px; 
     color: #737373; 
+}
+#f1-car-design{
+    float: right;
+    margin: auto 5vw;
+    height: 30px;
+    width: 87px;
+}
+#f1-car-design img{
+    width: 100%;
+    height: auto;
 }
 #f1-points-finish{
     font-size: 15px;
     font-weight: bold; 
+    width: 150px;
+    margin: 4px;
     text-align: right;
     float: right;
     letter-spacing: 1px;
@@ -257,13 +287,39 @@ button:hover{
     font-family: "DM Display", serif;
 }
 .team-standings #team-logo{
-    padding-top: 2vw;
+    padding: 3vw 2vw 0 2vw ;
+}
+#ferrari-standing #team-logo{
+    padding: 0 6.2vw;
 }
 #redbull-standing, #mercedes-standing, #ferrari-standing{
     border-radius: 20px 20px 0 0;
     margin-bottom: 3vw;
     background: #FFFFFF;
 }
+/* section 3 */
+.section-four {
+    margin: 2vw 4vw;
+}
+#f1-race-stats{
+    font-size: 40px; 
+    padding-bottom: 1vw;
+    margin: 2vw 0 ;
+    border-bottom: 5px solid #38383f; 
+    transition: 0.4s;
+}
+.race-stats-preview{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows:auto;
+    column-gap: 1.4vw;
+}
+#f1-race-stats:hover {
+    border-bottom:5px solid rgb(54, 119, 116);
+    color:rgb(54, 119, 116);
+    font-size: 45px;
+}
+
 @media only screen and (max-width: 900px){
     .section-one{
         grid-template-columns: 1fr;
@@ -275,7 +331,7 @@ button:hover{
     .container h4{
         display: none;
     }
-    .driver-standings{
+    .driver-standings, .team-standings{
         grid-template-columns: 1fr;
         grid-template-areas:
         "heading"
@@ -285,13 +341,16 @@ button:hover{
     .grid-standings-2021{
         margin:1vw 2vw;}
 
-    #hamilton-2, #bottas-3{
+    #hamilton-2, #bottas-3, #redbull-standing, #ferrari-standing{
         display: none;
+    }
+    #standing{
+        display:none;
     }
     .rules-preview{
         column-gap: 1.4vw;
     }
-    #f1-firstname, #f1-team {
+    #f1-firstname, #f1-team, #f1-drivers, #f1-car-design{
         display: none;
     }
 }
