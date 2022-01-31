@@ -189,10 +189,10 @@ h3 img{
     align-items: wrap;
     justify-content: space-between;
     background: #e6e5de;
-    padding:15px 10px 15px 20px;
     margin: 5px 0;
 }
 .grid-standings-2021 li a{
+    padding:15px 10px 15px 20px;
     width: 100%;
     color: #0C0D1D;
 }
