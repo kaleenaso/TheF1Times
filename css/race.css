@@ -337,7 +337,7 @@ button:hover{
     }
     .race-stats-preview{
         grid-template-columns: 1fr;
-        }  
+    }  
     .driver-standings, .team-standings{
         grid-template-columns: 1fr;
         grid-template-areas:
