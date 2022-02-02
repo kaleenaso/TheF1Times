@@ -1,2 +1,40 @@
-#twitter{
+#twitter {
+
+    background: url('../images/image-sprites.png') no-repeat -47px -6px;
+	width: 29px;
+	height: 28px;
+}
+#twitter:hover {
+    background: url('../images/image-sprites.png') no-repeat -47px -41px;}
+
+#pinterest {
+    background: url('../images/image-sprites.png')no-repeat -115px -10px;
+	width: 26px;
+	height: 26px;
+}
+#pinterest:hover{
+    background: url('../images/image-sprites.png')no-repeat -115px -43px;
+
+}
+#instagram {
+    background: url('../images/image-sprites.png') no-repeat -81px -8px;
+	width: 27px;
+	height: 27px;
+}
+#instagram:hover{
+    background: url('../images/image-sprites.png') no-repeat -81px -43px;
+
+}
+#facebook {
+    background: url('../images/image-sprites.png') no-repeat -14px -6px;
+	width: 29px;
+	height: 28px;
+}
+#facebook:hover{
+     background: url('../images/image-sprites.png')no-repeat -14px -41px;
+}
+
+#social a{
+    margin:auto  10px ; 
+    display:block;
 }
