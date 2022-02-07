@@ -9,12 +9,23 @@ figcaption{
 img{
     width: 100%; 
     height: auto; 
-    transition: 0.3s; 
 }
 .container{
-    position: relative;
-    width: auto;  
-}
+    position: relative; 
+    overflow: hidden;
+    }
+    .container img {
+    transition: transform 1s, filter 1.5s ease-in-out;
+    transform-origin: center center;
+    filter: brightness(75%);
+    }
+
+    /* The Transformation */
+    .container:hover img {
+    filter: brightness(100%);
+    transform: scale(1.2);
+    }
+
 .container h4{
     position: absolute; 
     bottom: 5%;

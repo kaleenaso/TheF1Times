@@ -194,6 +194,21 @@ figcaption{
     margin-bottom: 1vw; 
     color: #0C0D1D; 
 }
+.container{
+    position: relative; 
+    overflow: hidden;
+    }
+    .container img {
+    transition: transform 1s, filter 1.5s ease-in-out;
+    transform-origin: center center;
+    filter: brightness(75%);
+    }
+
+    /* The Transformation */
+    .container:hover img {
+    filter: brightness(100%);
+    transform: scale(1.2);
+    }
 
 @media only screen and (max-width: 800px){
     body{
