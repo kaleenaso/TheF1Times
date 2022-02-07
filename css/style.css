@@ -46,7 +46,7 @@ header a{
     text-align: center; 
 }
 #site-title a, #sitename{
-    text-shadow: #12142D 2px 2px 0px, #9C9C9C 4px 1.5px 0px;
+    text-shadow: #0C0D1D 2px 2px 0px, #9C9C9C 4px 1.5px 0px;
 }
 #f1-updates {
     grid-area:latest;
