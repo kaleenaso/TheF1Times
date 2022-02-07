@@ -59,8 +59,51 @@
     "text cover" ;
     margin: 2vw 0;
 }
-#safety-car{
-    grid-template-columns: 1.07fr 1.1fr;
+
+#chequered-flags{
+    display: grid; 
+    grid-template-columns: 1fr 1.07fr;
+    grid-template-rows: auto;
+    column-gap: 2vw;
+    grid-template-areas: 
+    "cover text" 
+    "flag flag";
+    margin: 2vw 0;
+}
+.f1-flags{
+    display:grid;
+    grid-area: flag;
+}
+.f1-flags span{
+    display: grid; 
+    height: 400px;
+    grid-template-columns: 0.6fr 1fr;
+    grid-template-areas: 
+    "img text";
+}
+.f1-flags span img{
+    grid-area: img; 
+}
+.f1-flags span p{
+    grid-area: text; 
+    line-height: 25px;
+    margin: auto 2vw;
+}
+.f1-flags span article {
+    padding: auto 0;
+}
+.f1-flags img{
+    grid-area: img; 
+    margin:auto;
+    height: 20vw;
+    width: auto;
+}
+.f1-flags p{
+    grid-area: exp;
+}
+#tyre-compounds .f1-flags h3{
+    margin: 0 2vw;
+    font-size: 30px;
 }
 .content-explanation h3, #tyre-compounds h3{
     font-family: "Playfair Display", Serif; 
@@ -95,7 +138,7 @@
 .f101-links {
     display:none;
 }
-#pitstops, #safety-car, #point-system{
+#pitstops, #safety-car, #point-system, #flags{
     grid-template-columns: 1fr;
 grid-template-areas: 
 "cover"
@@ -106,5 +149,6 @@ grid-template-areas:
 }
 .content-explanation p{
     font-size: 14px;
-    line-height: 20px;
+   line-height: 20px;
+}
 }
