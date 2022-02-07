@@ -16,7 +16,6 @@
         }
         #cover{
             grid-area: cover; 
-            margin: 2vw; 
         }
         figure img {
             height: auto; 
@@ -33,6 +32,21 @@
         }
         p a:hover {
             text-decoration: underline; 
+        }
+        .container{
+    position: relative; 
+}
+        .container h4{
+            position: absolute; 
+            top: 80%;
+            right: 5%;
+            color: #faf9f1;
+            font-family: 'Playfair Display', serif;
+            font-size: 3vw; 
+            font-weight: 300; 
+            width: inherit;    
+            text-shadow: #0C0D1D 0px 0px 10px; 
+            display: flex; 
         }
         main {
             display: grid; 
@@ -75,10 +89,10 @@
     </nav>
     <main>
         <section id="cover">
-            <figure> 
-                <img src="../images/hamilton-saudi.jpeg">
-                <figcaption>Image from @MercedesAMGF1 on Twitter</figcaption>
-            </figure>
+            <section class='container'>
+                <img id="image" src="../images/hamilton-saudi.jpeg"> 
+                    <h4>References and Resrouces</h4>
+            </section>
         </section>
         <section class="section-one">
             <b>References</b>
