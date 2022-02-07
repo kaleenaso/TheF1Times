@@ -9,6 +9,7 @@ figcaption{
 img{
     width: 100%; 
     height: auto; 
+    transition: 0.3s;
 }
 .container{
     position: relative; 

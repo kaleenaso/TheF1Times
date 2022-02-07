@@ -198,14 +198,14 @@ figcaption{
     position: relative; 
     overflow: hidden;
     }
-    .container img {
+.container img {
     transition: transform 1s, filter 1.5s ease-in-out;
     transform-origin: center center;
     filter: brightness(75%);
     }
 
     /* The Transformation */
-    .container:hover img {
+ .container:hover img {
     filter: brightness(100%);
     transform: scale(1.2);
     }

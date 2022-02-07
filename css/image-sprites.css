@@ -1,4 +1,6 @@
-#twitter {
+html{
+    scroll-behavior: smooth;
+} #twitter {
 
     background: url('../images/image-sprites.png') no-repeat -47px -6px;
 	width: 29px;
