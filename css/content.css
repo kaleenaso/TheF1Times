@@ -199,7 +199,7 @@ figcaption{
     overflow: hidden;
     }
 .container img {
-    transition: transform 1s, filter 1.5s ease-in-out;
+    transition: transform 3s, filter 1.5s ease-in-out;
     transform-origin: center center;
     filter: brightness(75%);
     }

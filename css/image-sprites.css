@@ -1,6 +1,27 @@
 html{
     scroll-behavior: smooth;
-} #twitter {
+}
+/* width */
+::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #0C0D1D; 
+    border-radius: 6px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #faf9f1; 
+  }
+  #twitter {
 
     background: url('../images/image-sprites.png') no-repeat -47px -6px;
 	width: 29px;
