@@ -33,14 +33,32 @@
     border-top: 9px solid #0C0D1D;
     border-right: 9px solid #0C0D1D;
     border-radius: 0 20px 0 0;
+    transition: .4s;
     margin: 2vw 0;
 }
 #f101-preview h1{
     font-size: 50px;
+    color: #0C0D1D;
 }
 #f101-preview p{
     font-size: 20px; 
     margin: 1vw 0; 
+    color: #0C0D1D;
+}
+#f101-preview:hover{
+    border-top: 9px solid rgb(54, 119, 116);
+    border-right: 9px solid rgb(54, 119, 116);
+    padding-top: 3vw;
+}
+
+.rules-preview a:hover p{
+    border-bottom: 3px solid rgb(54, 119, 116);
+    border-right: 3px solid rgb(54, 119, 116);
+    padding-bottom: 2vw;
+}
+.rules-preview h6{
+    color: #0C0D1D;
+    letter-spacing: 1px;;
 }
 #f101-preview button{
     margin: 2vw 3vw 3vw 3vw; 
@@ -52,20 +70,24 @@
     border: transparent;
     letter-spacing: 1.5px;
 }
+
 .rules-preview{
     display: grid; 
     grid-template-columns: 1fr 1fr;
     grid-row: auto; 
     column-gap: 1vw;
-    row-gap: 1vw;;
+    row-gap: 1vw;
+    color: #0C0D1D;
     margin: auto; 
 }
 .rules-preview p{
     font-size: 14px;
+    color: #0C0D1D;
     padding: 0 1vw 1vw 0; 
     border-bottom: 1px solid #0C0D1D;
     border-right: 1px solid #0C0D1D;
     border-radius: 0 0 20px 0;
+    transition: 0.3s;
 }
 h2 {
     font-family: 'PLayfair Display', serif;
