@@ -135,8 +135,8 @@
 .f101-links {
     display:none;
 }
-#pitstops, #safety-car, #point-system, #flags{
-    grid-template-columns: 1fr;
+#pitstops, #safety-car, #point-system, #chequred-flags{
+grid-template-columns: 1fr;
 grid-template-areas: 
 "cover"
 "text" ;
