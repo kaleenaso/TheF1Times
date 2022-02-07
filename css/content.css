@@ -69,7 +69,7 @@ nav li, nav a{
     color: rgb(104, 104, 104); 
 }
 nav li > a{
-    padding: 0.6vw 2.6vw; 
+    padding: 0.6vw 3.6vw; 
 }
 #page {
     box-shadow: inset 0 -3px 0 #faf9f1;
