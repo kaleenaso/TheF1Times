@@ -135,12 +135,19 @@
 .f101-links {
     display:none;
 }
-#pitstops, #safety-car, #point-system, #chequred-flags{
+#pitstops, #safety-car, #point-system, #chequered-flags{
 grid-template-columns: 1fr;
 grid-template-areas: 
 "cover"
 "text" ;
 }
+#chequered-flags{
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "cover"
+    "text"
+    "flag" ;
+    }
 .flag-details {
     grid-template-columns: 1fr; 
     grid-template-areas:
