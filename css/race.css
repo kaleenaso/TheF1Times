@@ -67,10 +67,13 @@
     background-color: #0C0D1D;
     border-radius: 5px;
     font-size: 18px;
+    transition: .3s;
     border: transparent;
     letter-spacing: 1.5px;
 }
-
+#f101-preview button:hover {
+    background-color: rgb(54, 119, 116);
+}
 .rules-preview{
     display: grid; 
     grid-template-columns: 1fr 1fr;
